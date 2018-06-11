@@ -149,9 +149,6 @@ const fontChange = (heading, body) => {
   }
 }
 
-//Update font combintation
-fontChange("Montserrat", "Lato")
-
 //
 document.getElementById('default-font').addEventListener("click", fontChange("Arial, Helvetica, Serif", "Arial, Helvetica, Serif"))
 
