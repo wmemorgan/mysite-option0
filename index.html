@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Wilfred Morgan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <div id="logo" class="brand"><a href="#top">Wilfred Morgan</a></div>
+    <ul class="navbar-nav">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
+      <li><a href="#design-options" class="nav-link design-btn">Design</a></li>
+    </ul>
+    <!-- Side Navigation Menu (for smaller screens) -->
+    <div id="menu-small">&#9776;</div>
+
+  </nav>
+  <div id="side-menu" class="side-nav">
+    <!-- <a href="" id="close-slide">&times;</a> -->
+    <div class="form-header">
+      <p class="brand">
+        <a href="#top">Wilfred Morgan</a>
+      </p>
+      <i id="close-slide" class="far fa-times-circle"></i>
+    </div>
+    <a href="#about" class="nav-link side-nav-link">About</a>
+    <a href="#projects" class="nav-link side-nav-link">Projects</a>
+    <a href="#skills" class="nav-link side-nav-link">Skills</a>
+    <a href="#contact" class="nav-link side-nav-link contact-btn">Contact</a>
+    <a href="#design-options" class="nav-link side-nav-link design-btn">Design</a>
+  </div>
+
+  <!-- Contact Form -->
+  <div id="contact" class="contact-form">
+    <div class="alert">You message has been sent</div>
+    <div class="form-header">
+      <i id="close-form" class="far fa-times-circle"></i>
+      <h3>Contact Me</h3>
+    </div>
+    <form id="contact-me" name="contact-me">
+      <p class="cta-text">How can I help you?</p>
+      <p>
+        <label for="first-name">First Name*</label>
+        <input type="text" name="first-name" id="first-name" required>
+      </p>
+      <p>
+        <label for="last-name">Last Name*</label>
+        <input type="text" name="last-name" id="last-name" required>
+      </p>
+      <p>
+        <label for="email">Email Address*</label>
+        <input type="email" name="email" id="email" required>
+      </p>
+      <p>
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone">
+      </p>
+      <p class="full">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5"></textarea>
+      </p>
+  
+      <!-- Test recaptcha key -->
+      <div class="full g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" style="transform:scale(0.7);-webkit-transform:scale(0.7);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+      <!-- Dev recaptcha key -->
+      <!-- <div class="full g-recaptcha" data-sitekey="6LffW1sUAAAAAKwdwhdLG9UTP-TXZGa4hGSpC0yP"
+           style="transform:scale(0.7);-webkit-transform:scale(0.7);transform-origin:0 0;-webkit-transform-origin:0 0;"></div> -->
+      <!-- Production recaptcha key -->
+      <!-- <div class="full g-recaptcha" data-sitekey="6LddKloUAAAAAPW9DJ_i3azVWbhyj63K_eScTIbv"
+           style="transform:scale(0.7);-webkit-transform:scale(0.7);transform-origin:0 0;-webkit-transform-origin:0 0;"></div> -->
+      <p class="full">
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </div>
+
+  <!-- Design Menu -->
+  <div id="design-options">
+    <div class="form-header">
+      <div><i id="close-font-menu" class="far fa-times-circle"></i></div>
+      <h3>Design Menu</h3>
+    </div>
+    <div class="font-menu">
+      <p class="design-category">Font Combinations</p>
+      <ul>
+        <li id="default-font" class="option-link font-option">Default Font</li>
+        <!-- SANS-SERIF/SERIF -->
+        <li id="option-1" class="option-link font-option">Merriweather Sans & Merriweather</li>
+        <li id="option-2" class="option-link font-option">Montserrat & Domine</li>
+        <!-- SERIF/SANS-SERIF -->
+        <li id="option-3" class="option-link font-option">Roboto Slab & Open Sans</li>
+        <li id="option-4" class="option-link font-option">Roboto Slab & Roboto</li>
+        <li id="option-5" class="option-link font-option">Lora & Muli</li>
+        <!-- SANS-SERIF/SANS-SERIF -->
+        <li id="option-6" class="option-link font-option">Arial & Open Sans</li>
+        <li id="option-7" class="option-link font-option">Roboto & Roboto</li>
+        <li id="option-8" class="option-link font-option">Roboto & Open Sans</li>
+        <li id="option-9" class="option-link font-option">Montserrat & Lato</li>
+      </ul>
+    </div>
+    <div class="color-menu">
+      <div class="form-header">
+        <p class="design-category">Color Schemes</p>
+        <div><i id="change-opacity" class="fas fa-pencil-alt" title="Change Opacity"></i></div>
+      </div>
+      <ul>
+        <li id="default-color" class="option-link color-option">Default Color</li>
+        <li id="blue-refresh-1" class="option-link color-option">Blue & Refreshing (ver 1)</li>
+        <li id="blue-refresh-2" class="option-link color-option">Blue & Refreshing (ver 2)</li>
+        <!-- <li id="blue-refresh-3">Blue & Refreshing-3</li>
+                <li id="blue-refresh-4">Blue & Refreshing-4</li> -->
+        <li id="corp-serious-1" class="option-link color-option">Corporate & Serious (ver 1)</li>
+        <li id="corp-serious-2" class="option-link color-option">Corporate & Serious (ver 2)</li>
+        <!-- <li id="corp-serious-1-light">Corporate & Serious2 (White Page)</li>
+                <li id="corp-serious-2-light">Corporate & Serious2 (Dark Page)</li> -->
+        <li id="material-design-1" class="option-link color-option">Material Design-1</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="home">
+    <header id="intro">
+      <h1 id="headline">Wilfred Morgan</h1>
+      <h4 id="subtitle">SOFTWARE DEVELOPER | DATA ENGINEER | IT CONSULTANT</h4>
+    </header>
+    <div id="tagline">
+      <p>
+        I work with organizations in leveraging technology and data to solve problems and achieve business goals.
+      </p>
+      <br>
+    </div>
+    <div class="cta-group">
+      <button class="cta-btn contact-btn">contact me</button>
+      <div class="social-media-group">
+        <div class="social-media-icons">
+          <a href="https://www.linkedin.com/in/wilfredmorgan/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/wmemorgan" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#contact" class="contact-btn">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="main">
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-img">
+          <img src="images/wmeheadshot.jpg" alt="A picture of Wilfred Morgan">
+        </div>
+        <div class="about-text">
+          <p>I am an entrepreneur and Information Technology (IT) professional with over 15 years of experience in the technology field
+            working in a variety of industries including the healthcare, retail, government, and technology startup sectors.</p>
+          <p>
+             My previous engagements included IT strategy development, infrastructure architecture design, business intelligence (BI)
+            systems design, and e-commerce application deployments.
+          </p>
+          <p>
+            Now my focus is working with organizations in planning, designing, developing, and deploying software and data products that
+            solve their biggest challenges.
+          </p>
+          <h3>Why Hire Me</h3>
+          <p><span class="emphasize-text">I provide full-service consulting and development.</span> 
+            My extensive knowledge and experience enables me to help clients with all phases of their technology initiatives; starting 
+            with the big picture in strategy planning and architecture design then drilling down to solutions development and implementation.
+          </p>
+          <p><span class="emphasize-text">I play well with others.</span>  
+            I lead, hire, coach, and work alongside technical professionals. My working and leadership style cultivates a calm
+          and highly productive working environment.
+          </p>
+          <p><span class="emphasize-text">I am guided by timeless principles and values.</span> 
+            Despite the rapid changes in technology, I help my clients and stakeholders keep pace by designing my solutions based on
+          the fundamentals of human psychology, sound business practices, and technology principles.
+          </p>
+          <p class="cta-text">
+            <span class="contact-btn">Contact me</span> if you would like to discuss how I can help you solve your biggest challenges and achieve even greater
+            success.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="anchor">
+      <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-intro">
+        <p>
+          My portfolio highlights a few of my development projects from interactive single page applications to RESTful microservices.
+        </p>
+      </div>
+        <div class="project-items">
+          <!-- Simon Game Summary -->
+          <div class="card project-item card-summary">
+            <div class="card-img card-summary-btn">
+              <img src="images/simon-game.png" alt="project image">
+            </div>
+            <div class="card-caption">
+              <h3 class="section-subtitle">Simon Game</h3>
+              <p class="portfolio-desc"> Recreation of the classic Simon game.</p>
+            </div>
+          </div>
+          <!-- Simon Game Details -->
+          <div class="card project-item card-detail">
+            <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
+            </span>
+            <p>
+              The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
+            </p>
+            <ul>
+              <li><strong>Vanilla Javascript</strong> program and game logic</li>
+              <li><strong>HTML</strong> content layout</li>
+              <li><strong>CSS</strong> format and game effects</li>
+            </ul>
+            <div class="card-action">
+              <a href="http://wilfredmorgan.com/simon-game" class="live-app" target="_blank">
+                <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                View Online
+              </a>
+              <a href="http://github.com/wmemorgan/simon-game" class="source-code" target="_blank">
+                <i class="fab fa-github" title="View Source"></i><br>
+                View Source
+              </a>
+            </div>
+          </div>
+
+          <!-- Tic-tac-toe Summary -->
+          <div class="card project-item card-summary">
+            <div class="card-img card-summary-btn">
+              <img src="images/tic-tac-toe.png" alt="project image">
+            </div>
+            <div class="card-caption">
+              <h3 class="section-subtitle">Tic-Tac-Toe</h3>
+              <p class="portfolio-desc">Tic-tac-toe game with 1 and 2 player modes</p>
+            </div>
+          </div>
+          <!-- Tic-tac-toe Details -->
+          <div class="card project-item card-detail">
+            <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
+            </span>
+            <p>
+              The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
+            </p>
+            <ul>
+              <li><strong>Vanilla Javascript</strong> program and game logic</li>
+              <li><strong>HTML</strong> content layout</li>
+              <li><strong>CSS</strong> format and game effects</li>
+            </ul>
+            <div class="card-action">
+              <a href="http://wilfredmorgan.com/tic-tac-toe/" class="live-app" target="_blank">
+                <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                View Online
+              </a>
+              <a href="https://github.com/wmemorgan/tic-tac-toe" class="source-code" target="_blank">
+                <i class="fab fa-github" title="View Source"></i><br>
+                View Source
+              </a>
+            </div>
+          </div>
+
+          <!-- JS Calculator Summary -->
+          <div class="card project-item card-summary">
+            <div class="card-img card-summary-btn">
+              <img src="images/calculator.png" alt="project image">
+            </div>
+            <div class="card-caption">
+              <h3 class="section-subtitle">Javascript Calculator</h3>
+              <p class="portfolio-desc">Calculator written in vanilla javascript</p>
+            </div>
+          </div>
+          <!-- JS Calculator Details -->
+          <div class="card project-item card-detail">
+            <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
+            </span>
+            <p>
+              The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
+            </p>
+            <ul>
+              <li><strong>Vanilla Javascript</strong> program logic</li>
+              <li><strong>HTML</strong> content and UI</li>
+              <li><strong>CSS</strong> UI</li>
+            </ul>
+            <div class="card-action">
+              <a href="http://wilfredmorgan.com/calculator_js/" class="live-app" target="_blank">
+                <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                View Online
+              </a>
+              <a href="https://github.com/wmemorgan/calculator_js" class="source-code" target="_blank">
+                <i class="fab fa-github" title="View Source"></i><br>
+                View Source
+              </a>
+            </div>
+          </div>  
+
+          <!-- Face Detect App Summary -->
+          <div class="card project-item card-summary">
+            <div class="card-img card-summary-btn">
+              <img src="images/face-detection.png" alt="project image">
+            </div>
+            <div class="card-caption">
+              <h3 class="section-subtitle">Face Detection App</h3>
+              <p class="portfolio-desc">An app that can detect a human face in a picture</p>
+            </div>
+          </div>
+          <!-- Face Detect App Details -->
+          <div class="card project-item card-detail">
+            <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
+            </span>
+            <ul>
+              <li><strong>NodeJS</strong> backend</li>
+              <li><strong>PostgreSQL</strong> database</li>
+              <li><strong>React</strong> frontend</li>
+              <li><strong>Clarifai</strong> face detection api</li>
+            </ul>    
+            <div class="card-action">
+              <a href="https://smart-brainapp.herokuapp.com" class="live-app" target="_blank">
+                <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                View Online
+              </a>
+              <a href="https://github.com/wmemorgan/face-detect-backend" class="source-code" target="_blank">
+                <i class="fab fa-github" title="View Source"></i><br>
+                View Source
+              </a>
+            </div>
+          </div>          
+
+          <!-- Image Search API Summary -->
+          <div class="card project-item card-summary">
+            <div class="card-img card-summary-btn">
+              <img src="images/google-api.png" alt="project image">
+            </div>
+            <div class="card-caption">
+              <h3 class="section-subtitle">Image Search Microservice</h3>
+              <p class="portfolio-desc"> An api that allows you to search for images and review recent searches</p>
+            </div>
+          </div>
+          <!-- Image Search API Details -->
+          <div class="card project-item card-detail">
+            <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
+            </span>
+            <ul>
+              <li><strong>NodeJS</strong> backend</li>
+              <li><strong>ExpressJS</strong> backend</li>
+              <li><strong>MongoDB</strong> database</li>
+              <li><strong>Google Custom Seach</strong> search engine api</li>
+            </ul>    
+            <div class="card-action">
+              <a href="https://wme-image-search-api.glitch.me" class="live-app" target="_blank">
+                <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                View Online
+              </a>
+              <a href="https://github.com/wmemorgan/image-search-api" class="source-code" target="_blank">
+                <i class="fab fa-github" title="View Source"></i><br>
+                View Source
+              </a>
+            </div>
+          </div>          
+
+          <!-- File Metadata API Summary -->
+          <div class="card project-item card-summary">
+            <div class="card-img card-summary-btn">
+              <img src="images/rest-api.png" alt="project image">
+            </div>
+            <div class="card-caption">
+              <h3 class="section-subtitle">File Metadata Microservice</h3>
+              <p class="portfolio-desc">A microservice that reads the metadata of an uploaded file and returns the file size</p>
+            </div>
+          </div>
+          <!-- File Metadata API Details -->
+          <div class="card project-item card-detail">
+            <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
+            </span>
+            <ul>
+              <li><strong>NodeJS</strong> backend</li>
+              <li><strong>ExpressJS</strong> backend</li>
+            </ul>    
+            <div class="card-action">
+              <a href="https://wme-file-metadata-ms.glitch.me" class="live-app" target="_blank">
+                <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                View Online
+              </a>
+              <a href="https://github.com/wmemorgan/file-metadata-ms" class="source-code" target="_blank">
+                <i class="fab fa-github" title="View Source"></i><br>
+                View Source
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cta-group">
+          <p class="cta-text">
+            <span class="contact-btn">Contact me</span> if you would like to discuss how I help you with your project.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-intro">
+          <p>
+            I have experience in a wide variety of technologies throughout my career. My passion and focus is in developing infrastructure
+            and applications that drive data analytics and process automation.
+          </p>
+          <p>
+            The listed technology stack are tools that I have used in some form or another in the past 12 to 18 months.
+          </p>
+          <p>But my most prized skill is my ability to learn knew concepts and technologies quickly.</p>
+        </div>
+
+        <div class="skills-list">
+          <div class="skill-category">
+            <h3 class="section-subtitle">Programming Languages</h3>
+            <div class="list-wrapper">
+              <div>
+                <img src="images/python.png" alt="Python Programming logo" class="responsive-img">Python</div>
+              <div>
+                <img src="images/sql.png" alt="SQL Programming logo" class="responsive-img">SQL</div>
+              <div>
+                <img src="images/javascript.png" alt="Javascript logo" class="responsive-img">Javascript</div>
+              <div>
+                <img src="images/html5.png" alt="HTML5 logo" class="responsive-img">HTML</div>
+              <div>
+                <img src="images/css3.png" alt="CSS3 logo" class="responsive-img">CSS</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="section-subtitle">Libraries and Frameworks</h3>
+            <div class="list-wrapper">
+              <div>
+                <img src="images/django-logo.png" alt="" class="responsive-img">Django</div>
+              <div>
+                <img src="images/react.png" alt="" class="responsive-img">React</div>
+              <div>
+                <img src="images/jquery.png" alt="" class="responsive-img">jQuery</div>
+            </div>
+    
+          </div>
+          <div class="skill-category">
+            <h3 class="section-subtitle">Backend</h3>
+            <div class="list-wrapper">
+              <div>
+                <img src="images/nodejs.png" alt="Node.js logo" class="responsive-img">Node</div>
+              <div>
+                <img src="images/postgresql.png" alt="PostgreSQL logo" class="responsive-img">PostgreSQL</div>
+              <div>
+                <img src="images/mysql.png" alt="MySQL logo" class="responsive-img">MySQL</div>
+              <div>
+                <img src="images/mssqlserver.png" alt="MS SQL Server logo" class="responsive-img">MS SQL Server</div>
+              <div>
+                <img src="images/mongodb.png" alt="MongoDB logo" class="responsive-img">MongoDB</div>
+              <div>
+                <img src="images/voracity.png" alt="IRI Voracity logo" class="responsive-img">Voracity/CoSort</div>
+            </div>
+            <ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="section-subtitle">Cloud Platforms</h3>
+            <div class="list-wrapper">
+              <div>
+                <img src="images/aws.png" alt="Amazon Web Services" class="responsive-img">AWS</div>
+              <div>
+                <img src="images/googlecloud.png" alt="Amazon Web Services" class="responsive-img">Google Cloud</div>
+              <div>
+                <img src="images/heroku.png" alt="Heroku" class="responsive-img">Heroku</div>
+            </div>
+          </div>
+          <p class="cta-text">
+            <span class="contact-btn">Contact me</span> to if you have any questions or want to discuss your current technology challenges.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  
+  <footer>
+    <div class="cta-group">
+      <div class="cta-text">
+        <p>Need to discuss a challenge you're facing?</p>
+      </div>
+      <button id="footer-cta-btn" class="cta-btn contact-btn">CONTACT ME</button>
+    </div>
+
+    <div class="navbar">
+      <div id="logo-footer" class="brand">
+        <a href="#top">Wilfred Morgan</a>
+      </div>
+      <div id="footer-menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="contact-btn">Contact</a>
+      </div>
+    </div>  
+    <div class="social-media-group">
+      <div class="social-cta">
+        <p>Connect with me:</p>
+      </div> 
+      <div class="social-media-icons">
+        <a href="https://www.linkedin.com/in/wilfredmorgan/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/wmemorgan" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#contact" class="contact-btn">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>   
+    <div id="copyright-info">
+      <p>©2018 Wilfred Morgan</p>
+    </div>
+  </footer>
+  <!-- Google reCaptcha API -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!-- Firebase API script -->
+  <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+  <!-- Custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
