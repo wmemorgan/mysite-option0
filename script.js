@@ -266,7 +266,7 @@ const openContactForm = () => {
 
 const closeContactForm = () => {
   document.getElementById('contact').style.width = '0'
-  document.getElementById('main').style.marginLeft = '0'
+  document.getElementById('main').style.marginLeft = 'auto'
   document.getElementsByTagName('form')[0].style.display = 'grid'
   removeActiveClass()
 }
