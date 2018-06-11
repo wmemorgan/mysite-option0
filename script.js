@@ -232,12 +232,12 @@ const addColors = (arr, obj) => {
 }
 
 const changeColorScheme = (arr, obj) => {
-  return () => {
+  // return () => {
     var newObj = addColors(arr, obj)
     for (var key in newObj) {
       document.documentElement.style.setProperty(key, newObj[key])
     }
-  }
+  // }
 }
 
 // Set color scheme
