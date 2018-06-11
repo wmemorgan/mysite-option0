@@ -94,14 +94,12 @@ for (let i = 0; i < document.getElementsByClassName('brand').length; i++) {
 const openSlideMenu = () => {
   document.getElementById('side-menu').style.width = '250px';
   document.getElementById('main').style.marginLeft = '250px';
-  console.log('open');
 }
 
 const closeSlideMenu = () => {
   document.getElementById('side-menu').style.width = '0';
   document.getElementById('main').style.marginLeft = '0';
   removeActiveClass()
-  console.log('close');
 }
 
 openSlideButton.addEventListener("click", openSlideMenu);
@@ -116,14 +114,13 @@ const openDesignMenu = () => {
   document.getElementById('design-options').style.height = '100vh';
   document.getElementById('design-options').style.padding = '1rem';
   // document.getElementById('main').style.marginLeft = '250px';
-  console.log('open');
+
 }
 
 const closeDesignMenu = () => {
   document.getElementById('design-options').style.height = '0';
   document.getElementById('design-options').style.padding = '0';
   removeActiveClass()
-  console.log('close');
 }
 
 for (let i = 0; i < designButton.length; i++) {
@@ -289,7 +286,6 @@ document.getElementById('change-opacity').addEventListener("click", changeOpacit
 /*-----Card behavior functions-----*/
 const openCardDetail = (i) => {
   return () => {
-    console.log(cardSummary[i])
     cardSummary[i].style.display = "none"
     cardDetail[i].style.display = "block"
   }
@@ -311,7 +307,6 @@ for (let i = 0; i < cardDetail.length; i++) {
 const openContactForm = () => {
   document.getElementById('contact').style.width = '70%'
   document.getElementById('main').style.marginLeft = '-60%'
-  console.log('open')
 }
 
 const closeContactForm = () => {
@@ -319,7 +314,6 @@ const closeContactForm = () => {
   document.getElementById('main').style.marginLeft = '0'
   document.getElementsByTagName('form')[0].style.display = 'grid'
   removeActiveClass()
-  console.log('close')
 }
 
 const hideForm = () => {
@@ -352,14 +346,12 @@ const saveMessage = (body) => {
 
 // reCAPTCHA request submission
 const recaptchaRequest = (body) => {
-  console.log(body);
   fetch(captchaEndpoint, {
     method: 'POST',
     mode: 'no-cors',
     body: JSON.stringify(body)
   })
     .then((data) => {
-      console.log(data);
       // Send message to firebase
       saveMessage(body);
     })
