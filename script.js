@@ -243,6 +243,9 @@ const changeColorScheme = (arr, obj) => {
   }
 }
 
+// Set color scheme
+changeColorScheme(corpSerious1, colorPalette)
+
 document.getElementById('default-color').addEventListener("click", changeColorScheme(defaultColors, colorPalette));
 document.getElementById('blue-refresh-1').addEventListener("click", changeColorScheme(blueRefresh1, colorPalette));
 document.getElementById('blue-refresh-2').addEventListener("click", changeColorScheme(blueRefresh2, colorPalette));
