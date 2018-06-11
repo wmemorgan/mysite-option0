@@ -412,31 +412,6 @@ nav ul {
   padding: 7rem 5rem;
 }
 
-/* #home::before {
-  content: "";
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-image: url(images/bg_code.jpg);
-  background-size: cover;
-} */
-
-/* #home::after {
-  content: "";
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.1; 
-  background: var(--default-primary-color);
-  background-size: cover;
-} */
-
 #intro {
   margin: 2rem 0;
   text-align: center;
