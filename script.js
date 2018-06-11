@@ -261,12 +261,10 @@ for (let i = 0; i < cardDetail.length; i++) {
 /*-----Contact form handling-----*/
 const openContactForm = () => {
   document.getElementById('contact').style.width = '70%'
-  document.getElementById('main').style.marginLeft = '-60%'
 }
 
 const closeContactForm = () => {
   document.getElementById('contact').style.width = '0'
-  document.getElementById('main').style.marginLeft = 'auto'
   document.getElementsByTagName('form')[0].style.display = 'grid'
   removeActiveClass()
 }
