@@ -238,10 +238,6 @@ const changeOpacity = _ => {
   document.getElementById('home').pseudoStyle("after", "opacity", opacitySetting);
 }
 
-document.getElementById('change-opacity').addEventListener("click", changeOpacity)
-
-
-
 /*-----Card behavior functions-----*/
 const openCardDetail = (i) => {
   return () => {
