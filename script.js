@@ -109,25 +109,6 @@ for (let i = 0; i < sideNavLink.length; i++) {
   sideNavLink[i].addEventListener("click", closeSlideMenu)
 }
 
-// Design options menu
-const openDesignMenu = () => {
-  document.getElementById('design-options').style.height = '100vh';
-  document.getElementById('design-options').style.padding = '1rem';
-  // document.getElementById('main').style.marginLeft = '250px';
-
-}
-
-const closeDesignMenu = () => {
-  document.getElementById('design-options').style.height = '0';
-  document.getElementById('design-options').style.padding = '0';
-  removeActiveClass()
-}
-
-for (let i = 0; i < designButton.length; i++) {
-  designButton[i].addEventListener("click", openDesignMenu)
-}
-document.getElementById('close-font-menu').addEventListener("click", closeDesignMenu);
-
 // Font options
 const fontChange = (heading, body) => {
   return () => {
