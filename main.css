@@ -496,7 +496,7 @@ section .container {
 h2.section-title {
   position: relative;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   max-width: 991px;
