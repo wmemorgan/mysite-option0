@@ -130,28 +130,6 @@ const fontChange = (heading, body) => {
   }
 }
 
-//
-document.getElementById('default-font').addEventListener("click", fontChange("Arial, Helvetica, Serif", "Arial, Helvetica, Serif"))
-
-// SANS SERIF/SERIF 
-document.getElementById('option-1').addEventListener("click", fontChange("'Merriweather Sans'", "Merriweather"))
-document.getElementById('option-2').addEventListener("click", fontChange("Montserrat", "Domine"))
-
-/* SERIF/SANS SERIF */
-document.getElementById('option-3').addEventListener("click", fontChange("'Roboto Slab'", "'Open Sans'"))
-document.getElementById('option-4').addEventListener("click", fontChange("'Roboto Slab'", "Roboto"))
-document.getElementById('option-5').addEventListener("click", fontChange("Lora", "Muli"))
-
-// SANS SERIF/SANS SERIF
-document.getElementById('option-6').addEventListener("click", fontChange("'Arial, Helvetica'", "'Open Sans'"))
-document.getElementById('option-7').addEventListener("click", fontChange("Roboto", "Roboto"))
-document.getElementById('option-8').addEventListener("click", fontChange("Roboto", "'Open Sans'"))
-document.getElementById('option-9').addEventListener("click", fontChange("Montserrat", "Lato"))
-
-
-
-
-
 // Color scheme options
 //Assign colors to palette
 var colorPaletteDefault = {
