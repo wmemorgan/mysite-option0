@@ -205,11 +205,9 @@ nav ul {
   color: var(--text-primary-color);
   font-size: 1.625rem;
   padding: .8rem;
-  
 }
 
 .side-nav {
-  
   background-color: var(--overlay-bg-color);
   height: 100%;
   width: 0;
@@ -217,10 +215,10 @@ nav ul {
   z-index: 10;
   top: 0;
   left: 0;
-  opacity: 0.9;
   overflow-x: hidden;
   padding-top: 1.5rem;
-  transition: 0.5s
+  transition: ease-in 0.5s;
+  opacity: 1;
 }
 
 .side-nav * {
@@ -265,7 +263,7 @@ nav ul {
   color: var(--overlay-text-color);
   background-color: var(--overlay-bg-color);
   overflow-x: hidden;
-  transition: 0.5s
+  transition: ease-in 0.5s;
 }
 
 #contact #close-form {

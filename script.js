@@ -93,12 +93,10 @@ for (let i = 0; i < document.getElementsByClassName('brand').length; i++) {
 /*-----Side navigation functions-----*/
 const openSlideMenu = () => {
   document.getElementById('side-menu').style.width = '250px';
-  document.getElementById('main').style.marginLeft = '250px';
 }
 
 const closeSlideMenu = () => {
   document.getElementById('side-menu').style.width = '0';
-  document.getElementById('main').style.marginLeft = '0';
   removeActiveClass()
 }
 
@@ -198,9 +196,6 @@ const changeColorScheme = (arr, obj) => {
     }
   // }
 }
-
-// Set color scheme
-// changeColorScheme(corpSerious1, colorPalette)
 
 // document.getElementById('default-color').addEventListener("click", changeColorScheme(defaultColors, colorPalette));
 // document.getElementById('blue-refresh-1').addEventListener("click", changeColorScheme(blueRefresh1, colorPalette));
