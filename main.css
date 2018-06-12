@@ -518,6 +518,10 @@ h3.section-subtitle {
   border-bottom: 1px solid #BDBDBD;
 }
 
+section .cta-group {
+  padding-bottom: 1rem;
+}
+
 /*----about me----*/
 #about .about-text {
   padding-left: 2.775vw;
