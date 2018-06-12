@@ -26,19 +26,19 @@
 /*-----CSS Variables----*/
 /*--Basic color scheme--*/
 :root {
-  --dark-primary-color: #3b5998;
-  --default-primary-color: #3b5998;
+  --dark-primary-color: #022140;
+  --default-primary-color: #265077;
   --light-primary-color: #C5CAE9;
-  --text-primary-color: #f2f2f2;
-  --accent-color: #3b5998;
-  --primary-bg-color: #f4f4f4;
+  --text-primary-color: #FFFFFF;
+  --accent-color: #51a7f8;
+  --primary-bg-color: #FFFFFF;
   --primary-text-color: #212121;
-  --secondary-text-color: #757575;
+  --secondary-text-color: #1E4258;
   --divider-color: var(--dark-primary-color);
-  --overlay-bg-color: #31302e;
+  --overlay-bg-color: #1E4258;
   --overlay-text-color: #ccc;
   --container-bg-color: #E9ECEF;
-  --background-image: url(images/bg_code.jpg); 
+  --background-image: url(images/bg_code_corp_light.jpg); 
 }
 
 .dark-primary-color    { background: var(--dark-primary-color); }
