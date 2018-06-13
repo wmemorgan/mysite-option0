@@ -491,7 +491,7 @@ section .container {
   padding: 0;
 }
 
-.section-intro {
+.section-text {
   max-width: 991px;
   padding: 0 2.775vw;
   text-align: left;
@@ -583,7 +583,7 @@ section .cta-group {
   text-align: center;
 }
 
-p.section-intro {
+p.section-text {
   text-align: left;
 }
 
