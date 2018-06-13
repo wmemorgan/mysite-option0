@@ -493,7 +493,7 @@ section .container {
 
 .section-text {
   max-width: 991px;
-  padding: 0 2.775vw;
+  padding: 0 5vw;
   text-align: left;
   margin: 0 auto;
   /* border: 2px solid purple; */
@@ -530,17 +530,14 @@ section .cta-group {
 }
 
 /*----about me----*/
-#about .about-text {
-  padding-left: 2.775vw;
-  padding-right: 2.775vw;
-}
-
 .about-img {
-  width: 180px;
+  width: 230px;
   height: auto;
   float: left;
   margin-right: 1rem;
   padding: 0.5rem;
+  padding-bottom: 0;
+  padding-left: 5vw;
 }
 
 .about-img img {
@@ -829,6 +826,11 @@ footer #copyright-info {
   
   #menu-small {display: block;}
 
+  /*----section----*/
+  .section-text {
+    padding: 0 3.5vw;
+  }
+
   /*----skills----*/
   .list-wrapper {
     grid-template-columns: repeat(3, 1fr);
@@ -965,10 +967,15 @@ footer #copyright-info {
     font-size: 1.5rem;
   }
 
+  .section-text {
+    padding: 0 2.775vw;
+  }
+
   /*----about me----*/
   .about-img {
     float: none;
-    width: 135px;
+    width: 150px;
+    padding: 0;
     margin: 0 auto;
     
   }
