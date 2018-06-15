@@ -32,7 +32,7 @@
   --text-primary-color: #FFFFFF;
   --accent-color: #51a7f8;
   --primary-bg-color: #FFFFFF;
-  --primary-text-color: #212121;
+  --primary-text-color: #595959;
   --emphasis-text-color: #212121;
   --secondary-text-color: #1E4258;
   --divider-color: var(--dark-primary-color);
@@ -494,6 +494,7 @@ section .container {
 }
 
 .section-text {
+  color: var(--primary-text-color);
   max-width: 991px;
   padding: 0 5vw;
   text-align: left;
