@@ -81,6 +81,7 @@
 
 body {
   font-family: Lato, Helvetica, Sans-Serif;
+  letter-spacing: 0.042rem;
   background-color: var(--primary-bg-color);
   overflow-x: hidden;
   margin: 0 auto;
@@ -485,6 +486,7 @@ nav ul {
 }
 
 section {
+  /* letter-spacing: 0.042rem; */
   margin: 2rem auto;
 }
 
