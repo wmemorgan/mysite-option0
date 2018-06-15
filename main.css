@@ -38,7 +38,8 @@
   --divider-color: var(--dark-primary-color);
   --overlay-bg-color: #1E4258;
   --overlay-text-color: #ccc;
-  --container-bg-color: #E9ECEF;
+  /* --container-bg-color: #E9ECEF; */
+  --container-bg-color: #F9F9F9;
   --background-image: url(images/bg_code_corp_light.jpg); 
 }
 
