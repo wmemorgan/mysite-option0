@@ -609,15 +609,16 @@ p.section-text {
 }
 
 .card p {
-  padding: 1.5rem 3rem 0 3rem;
+  padding: 1.5rem 2rem 0 2rem;
 }
 
 .card ul {
-  padding: 0 4.5rem;
+  padding: 0 2rem;
   list-style: initial;
 }
 
 .card-title {
+  padding: 0 .65rem;
   padding-top: 1.5rem;
   text-align: center;
   display: grid;
@@ -958,8 +959,8 @@ footer #copyright-info {
   }
 
   #tagline {
-    padding-top: 1.5rem;
-    font-size: 0.85rem;
+    padding-top: 1rem;
+    font-size: 1rem;
   }
 
   #home .cta-btn,
