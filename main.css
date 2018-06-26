@@ -426,9 +426,13 @@ nav ul {
   text-align: center;
 }
 
-#intro h1 {
-  font-size: 4rem;
+#headline {
+  font-size: 3.5rem;
   text-transform: uppercase;
+}
+
+#subtitle {
+  font-size: 1.5rem;
 }
 
 #tagline {
@@ -888,9 +892,9 @@ footer #copyright-info {
 
 /* SMALL SCREENS */
 @media only screen and (max-width: 568px) {
-  h1 {
+  /* h1 {
     font-size: 1.45rem;
-  }
+  } */
 
   h2 {
     font-size: 1.25rem;
@@ -947,15 +951,18 @@ footer #copyright-info {
   /*----home----*/
   #home {
     text-align: left;
-    padding: 10rem 1rem;
+    padding: 5rem 1rem;
   }
   #intro {
     margin-top: 2rem;
   }
 
-  #intro h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
+  #headline {
+    font-size: 1.45rem;
+
+  }
+  #subtitle {
+    font-size: 0.68rem;
   }
 
   #tagline {
