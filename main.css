@@ -726,30 +726,61 @@ p.section-text {
 
 .role-heading {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   border-bottom: 1px solid #BDBDBD;
 }
 
 .company {
-  font-weight: 500;
-  color: var(--secondary-text-color);
+  font-weight: 600;
+  color: var(--dark-primary-color);
 }
 
 .role-title {
   font-weight: 400;
+  color: var(--secondary-text-color);
   text-align: right;
-  /* margin-bottom: 1rem;
-  padding: 1rem 0; */
+}
+
+.role-description ul li {
+  margin-left: 2rem;
+  list-style: initial;
+  line-height: 1.5;
+}
+
+.role-summary {
+  margin-bottom: 2rem;
 }
 
 .role-summary p {
   font-style: italic;
 }
 
+.role-description ul, .role-summary ul {
+  margin-top: 0;
+  padding-top: 0;
+}
 
+.role-summary li {
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.role-accomplishments {
+  margin-bottom: 3rem;
+}
+
+.role-accomplishments ul li {
+  margin-left: 2rem;
+}
+
+.accomplishments {
+  color: var(--default-primary-color);
+  text-transform: uppercase;
+}
 
 .work-dates {
   height: 2rem;
+  border-top: 1px solid #BDBDBD;
 }
 
 
@@ -760,7 +791,7 @@ footer {
   color: var(--text-primary-color);
   background-color: var(--dark-primary-color);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
   width: 100%;
   margin-top: 2rem;
@@ -774,11 +805,13 @@ footer * {
   text-decoration: none;
 }
 
+footer .cta-text {
+  font-size: 1.15rem;
+}
+
 footer a:hover, footer button:hover{
   border-bottom: 2px solid var(--text-primary-color);
   border-radius: 0%;
-  /* background-color: var(--text-primary-color);
-  color: var(--dark-primary-color); */
 }
 
 footer ul>li {
@@ -802,9 +835,8 @@ footer .cta-btn {
 }
 
 footer .navbar {
-  padding: 1rem;
-  text-align: left;
-}
+    display: none;
+  }
 
 footer #logo-footer a {
   font-size: 1.15rem;
@@ -819,9 +851,9 @@ footer #logo-footer a {
 }
 
 footer .social-media-group {
-  text-align: right;
+  align-self: center;
+  text-align: center;
   font-size: 0.85rem;
-  padding: 1rem;
 }
 
 footer .social-cta {
@@ -832,9 +864,12 @@ footer .social-cta {
 }
 
 footer .social-media-icons {
-  font-size: 1rem;
-  /* padding: 0.5rem; */
-  letter-spacing: 0.25rem;
+  margin: 0 auto;
+  width: 20vw;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0.25rem;
   
 }
 
@@ -1089,6 +1124,12 @@ footer #copyright-info {
   .role-title {
     font-size: 0.9rem;
   }
+
+ .role-description ul li, 
+ .role-accomplishments ul li {
+   margin-left: 0.5rem;
+   font-size: 0.92rem;
+ } 
 
   /*---footer----*/
   footer {
