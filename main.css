@@ -741,7 +741,7 @@ p.section-text {
   text-align: right;
 }
 
-.role-description ul li {
+.role-description ul li, .role-accomplishments ul li {
   margin-left: 2rem;
   list-style: initial;
   line-height: 1.5;
@@ -755,22 +755,18 @@ p.section-text {
   font-style: italic;
 }
 
-.role-description ul, .role-summary ul {
-  margin-top: 0;
-  padding-top: 0;
-}
-
 .role-summary li {
   margin-bottom: 0.5rem;
   padding: 0;
 }
 
-.role-accomplishments {
-  margin-bottom: 3rem;
+.role-description ul, .role-accomplishments ul {
+  margin-top: 0;
+  padding-top: 0;
 }
 
-.role-accomplishments ul li {
-  margin-left: 2rem;
+.role-accomplishments {
+  margin-bottom: 3rem;
 }
 
 .accomplishments {
