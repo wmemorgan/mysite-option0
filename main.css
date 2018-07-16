@@ -715,6 +715,45 @@ p.section-text {
   display: table-cell;
 }
 
+/*-----work-----*/
+.role {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: var(--primary-bg-color);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.role-heading {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.company {
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+.role-title {
+  font-weight: 400;
+  text-align: right;
+  /* margin-bottom: 1rem;
+  padding: 1rem 0; */
+}
+
+.role-summary p {
+  font-style: italic;
+}
+
+
+
+.work-dates {
+  height: 2rem;
+}
+
+
+
 
 /*-------footer------*/
 footer {
@@ -845,6 +884,15 @@ footer #copyright-info {
   .list-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /*----work----*/
+  .role-heading {
+    grid-template-columns: 1fr;
+  }
+  .role-title {
+    text-align: left;
+  }
+
 }
 
 @media only screen and (max-width: 868px) {
@@ -1035,6 +1083,11 @@ footer #copyright-info {
   /*----skills----*/
   .list-wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*----work----*/
+  .role-title {
+    font-size: 0.9rem;
   }
 
   /*---footer----*/
