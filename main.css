@@ -682,6 +682,18 @@ p.section-text {
   font-size: 26px;
 }
 
+.card-project {
+    padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-evenly;
+}
+
+.card-project i {
+  color: black;
+  font-size: 26px;
+}
+
 
 /*-----skills-----*/
 .skill-category {
