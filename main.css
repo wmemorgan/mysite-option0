@@ -534,6 +534,16 @@ h3.section-subtitle {
   border-bottom: 1px solid #BDBDBD;
 }
 
+.section-text ol {
+  margin-left: 2rem;
+}
+
+.section-text a:link, .section-text a:visited {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
 section .cta-group {
   padding-bottom: 1rem;
 }
@@ -1073,6 +1083,10 @@ footer #copyright-info {
 
   .section-text {
     padding: 0 2.775vw;
+  }
+
+  .section-text ol {
+    margin-left: 1rem;
   }
 
   /*----about me----*/
