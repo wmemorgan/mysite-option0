@@ -211,7 +211,7 @@ nav ul {
 }
 
 .side-nav {
-  background-color: var(--overlay-bg-color);
+  background-color: var(--dark-primary-color);
   height: 100%;
   width: 0;
   position: fixed;
@@ -271,7 +271,7 @@ nav ul {
   top: 0;
   right: 0;
   color: var(--overlay-text-color);
-  background-color: var(--overlay-bg-color);
+  background-color: var(--dark-primary-color);
   overflow-x: hidden;
   transition: ease-in 0.5s;
 }
@@ -452,7 +452,7 @@ nav ul {
   text-transform: uppercase;
   color: var(--text-primary-color);
   background-color: rgba(0, 0, 0, 0);
-  border: 0.5px solid var(--text-primary-color);
+  border: 1px solid var(--text-primary-color);
   border-radius: 4px;
   padding: 0.5rem 1rem;
   cursor: pointer;
