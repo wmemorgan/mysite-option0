@@ -842,13 +842,14 @@ footer .cta-group {
 footer .cta-btn {
   justify-self: center;
   width: 30vw;
+  text-transform: uppercase;
   font-weight: bold;
   color: var(--text-primary-color);
   background-color: var(--accent-color);
   border: 1px solid var(--text-primary-color);
   border-radius: 4px;
   margin-top: 0.3rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 
 footer .navbar {
