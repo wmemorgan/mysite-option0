@@ -613,7 +613,7 @@ p.section-text {
   text-align: left;
 }
 
- .project-items {
+.project-list-wrapper {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
@@ -962,7 +962,7 @@ footer #copyright-info {
 @media only screen and (max-width: 868px) {
 
     /*----projects----*/
-  .project-items {
+ .project-list-wrapper {
     grid-template-columns: repeat(2, auto);
   }
 }
@@ -1140,7 +1140,7 @@ footer #copyright-info {
   }
 
   /*----projects----*/
-  .project-items {
+ .project-list-wrapper {
     grid-template-columns: 1fr;
   }
 
