@@ -624,14 +624,17 @@ section .cta-group {
 }
 
 .category-menu {
-  display: flex;
+  /* display: flex; */
   justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
 }
 
 .category-menu-item {
   font-size: 0.85rem;
   font-weight: bold;
   letter-spacing: 0.15em;
+  text-align: center;
   padding: 0.5rem;
   text-transform: uppercase;
   border-radius: 3px;
@@ -671,9 +674,9 @@ p.section-text {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
     grid-row-gap: 1em;
-    margin: 2rem 0;
+    /* margin: 2rem 0;
     padding-right: 2.775vw;
-    padding-left: 2.775vw;
+    padding-left: 2.775vw; */
   }
 
 .card {
@@ -1016,7 +1019,7 @@ footer #copyright-info {
 
     /*----projects----*/
  .project-list-wrapper {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
