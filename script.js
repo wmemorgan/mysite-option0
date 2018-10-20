@@ -233,26 +233,6 @@ const changeOpacity = _ => {
   document.getElementById('home').pseudoStyle("after", "opacity", opacitySetting);
 }
 
-/*-----Card behavior functions-----*/
-const openCardDetail = (i) => {
-  return () => {
-    cardSummary[i].style.display = "none"
-    cardDetail[i].style.display = "block"
-  }
-}
-
-const closeCardDetail = (i) => {
-  return () => {
-    cardSummary[i].style.display = "block"
-    cardDetail[i].style.display = "none"
-  }
-}
-
-for (let i = 0; i < cardDetail.length; i++) {
-  summaryButton[i].addEventListener("click", openCardDetail(i))
-  closeCardButton[i].addEventListener("click", closeCardDetail(i))
-}
-
 /*-----Contact form handling-----*/
 const openContactForm = () => {
   document.getElementById('contact').style.width = '70%'
@@ -345,4 +325,59 @@ for (let i = 0; i < contactButton.length; i++) {
 closeForm.addEventListener("click", closeContactForm)
 
 document.getElementById('contact-me').addEventListener('submit', submitForm)
+
+/*----Project category menu behavior----*/
+const categories = document.getElementsByClassName('project-category')
+const filters = document.getElementsByClassName('filters')
+const showAllCategories = () => {
+
+    for (let i = 0; i < categories.length; i++) {
+      if (categories[i].classList.contains('hide')) {
+        console.log('Displaying category')
+        categories[i].classList.remove('hide')
+      }
+    }
+}
+
+const filterCategories = (i) => {
+  return () => {
+    for (index = 0; index < categories.length; index++) {
+      if (index === i && categories[i].classList.contains('hide')) {
+        console.log('Displaying category')
+        categories[i].classList.remove('hide')
+      }
+      else if (index != i) {
+        console.log('hiding', categories[index])
+        categories[index].classList.add('hide') 
+      }
+
+    }
+  }
+}
+document.getElementById('remove-filters').addEventListener('click', showAllCategories)
+
+for (let i = 0; i < filters.length; i++) {
+  filters[i].addEventListener('click',filterCategories(i))
+}
+
+
+/*-----Project card behavior functions-----*/
+const openCardDetail = (i) => {
+  return () => {
+    cardSummary[i].style.display = "none"
+    cardDetail[i].style.display = "block"
+  }
+}
+
+const closeCardDetail = (i) => {
+  return () => {
+    cardSummary[i].style.display = "block"
+    cardDetail[i].style.display = "none"
+  }
+}
+
+for (let i = 0; i < cardDetail.length; i++) {
+  summaryButton[i].addEventListener("click", openCardDetail(i))
+  closeCardButton[i].addEventListener("click", closeCardDetail(i))
+}
 
