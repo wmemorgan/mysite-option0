@@ -136,6 +136,14 @@ span.contact-btn {
   padding: 0.15rem 0.25rem;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 /*-----nav-----*/
 nav {
   background-color: var(--dark-primary-color);
@@ -607,15 +615,25 @@ section .cta-group {
   display: grid;
   grid-template-columns: 1fr;
   /* text-align: center; */
+  /* justify-items: center; */
+}
+.category-menu {
+  display: flex;
+  border: 1px solid blue;
 }
 
-/* .project-category {
+.category-menu-item {
+   padding: 0.5rem;
+}
+
+
+.project-category {
   margin: 2rem 0;
   padding: 2rem;
   background: var(--primary-bg-color);
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
   0 7px 20px 0 rgba(0, 0, 0, 0.17);
-} */
+}
 
 p.section-text {
   text-align: left;
@@ -623,7 +641,7 @@ p.section-text {
 
 .project-list-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
     grid-row-gap: 1em;
     margin: 2rem 0;
@@ -632,7 +650,7 @@ p.section-text {
   }
 
 .card {
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
   text-align: center;
   background: var(--primary-bg-color);
