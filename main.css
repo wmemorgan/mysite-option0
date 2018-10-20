@@ -136,10 +136,6 @@ span.contact-btn {
   padding: 0.15rem 0.25rem;
 }
 
-.show {
-  display: block;
-}
-
 .hide {
   display: none;
 }
@@ -623,10 +619,20 @@ section .cta-group {
 }
 
 .category-menu-item {
-  /* font-size: 0.75rem; */
+  font-size: 0.85rem;
   font-weight: bold;
-  text-transform: uppercase;
+  letter-spacing: 0.15em;
   padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0 rgb(0,0,0,.25);
+  cursor: pointer;
+}
+
+.category-menu-item:hover,
+.category-menu-item.show {
+  color: var(--text-primary-color);
+  background-color: var(--dark-primary-color);
 }
 
 /* .filters {
