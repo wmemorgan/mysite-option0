@@ -328,23 +328,34 @@ document.getElementById('contact-me').addEventListener('submit', submitForm)
 
 /*----Project category menu behavior----*/
 const categories = document.getElementsByClassName('project-category')
+const noFilters = document.getElementById('remove-filters')
 const filters = document.getElementsByClassName('filters')
-const showAllCategories = () => {
+const removeShowClass = () => {
+  if (document.querySelector('.show')) {
+    document.querySelector('.show').classList.remove('show')
+  }
+}
 
-    for (let i = 0; i < categories.length; i++) {
-      if (categories[i].classList.contains('hide')) {
-        console.log('Displaying category')
-        categories[i].classList.remove('hide')
-      }
+const showAllCategories = () => {
+  removeShowClass()
+  noFilters.classList.add('show')
+  for (let i = 0; i < categories.length; i++) {
+    if (categories[i].classList.contains('hide')) {
+      console.log('Displaying category')
+      categories[i].classList.remove('hide')
     }
+  }
 }
 
 const filterCategories = (i) => {
   return () => {
+    removeShowClass()
     for (index = 0; index < categories.length; index++) {
-      if (index === i && categories[i].classList.contains('hide')) {
-        console.log('Displaying category')
-        categories[i].classList.remove('hide')
+      if (index === i) {
+        if (categories[i].classList.contains('hide')) {
+          categories[i].classList.remove('hide')
+        }
+        filters[i].classList.add('show')
       }
       else if (index != i) {
         console.log('hiding', categories[index])
@@ -354,7 +365,7 @@ const filterCategories = (i) => {
     }
   }
 }
-document.getElementById('remove-filters').addEventListener('click', showAllCategories)
+noFilters.addEventListener('click', showAllCategories)
 
 for (let i = 0; i < filters.length; i++) {
   filters[i].addEventListener('click',filterCategories(i))
