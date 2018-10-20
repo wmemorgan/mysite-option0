@@ -140,6 +140,10 @@ span.contact-btn {
   display: none;
 }
 
+.cta-text {
+  text-align: center;
+}
+
 /*-----nav-----*/
 nav {
   background-color: var(--dark-primary-color);
@@ -323,7 +327,8 @@ nav ul {
   display: block;
 }
 
-#contact-me .cta-text {
+#contact-me .cta-intro {
+  font-size: 1.5rem;
   grid-column: 1 / 3;
 }
 
@@ -613,6 +618,11 @@ section .cta-group {
   /* text-align: center; */
   /* justify-items: center; */
 }
+
+.category-menu-instructions {
+  text-align: center;
+}
+
 .category-menu {
   display: flex;
   justify-content: space-evenly;
@@ -1085,7 +1095,8 @@ footer #copyright-info {
     grid-template-columns: 1fr;
   }
 
-  #contact-me .cta-text {
+  #contact-me .cta-intro {
+    font-size: 1rem;
     grid-column: 1 / 1;
   }
 
