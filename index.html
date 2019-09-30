@@ -20,7 +20,6 @@
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
       <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#work" class="nav-link">Work</a></li>
       <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
     </ul>
     <!-- Side Navigation Menu (for smaller screens) -->
@@ -39,7 +38,6 @@
     <a href="#about" class="nav-link side-nav-link">About</a>
     <a href="#projects" class="nav-link side-nav-link">Projects</a>
     <a href="#skills" class="nav-link side-nav-link">Skills</a>
-    <a href="#work" class="nav-link side-nav-link">Work</a>
     <a href="#contact" class="nav-link side-nav-link contact-btn">Contact</a>
   </div>
 
@@ -180,579 +178,95 @@
         <p>
           This portfolio showcases various projects and proofs of concepts to showcase my technical skills.
         </p>
-        <p class="category-menu-instructions">Filter projects by the following categories:</p>
       </div>
-      <ul class="category-menu">
-        <li class="category-menu-item show" id="remove-filters">All</li>
-        <li class="category-menu-item filters">API and Microservices</li>
-        <li class="category-menu-item filters">Data Science</li>
-        <li class="category-menu-item filters">Serverless</li>
-        <li class="category-menu-item filters">Fullstack</li>
-        <li class="category-menu-item filters">Frontend</li>
-      </ul>
-        <div class="project-items">
-          <div class="project-category" id="api-dev">
-            <h3 class="section-subtitle">APIs and Microservices</h3>
-            <div class="project-list-wrapper">
-
-              <!-- Stock Picker API Summary -->
-              <div id="stock-picker" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/stock-price-api.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Stock Picker API</h3>
-                  <p class="portfolio-desc">A REST API for checking the latest stock prices of publicly traded companies.</p>
-                </div>
+      <!-- Full Stack Projects -->
+      <div class="project-category" id="fullstack-dev">
+        <div class="project-list-wrapper">
+          <!-- DevDesk_Q -->
+          <div class="project-item">
+            <!-- DevDesk_Q Summary -->
+            <div id="devdesk_q" class="card card-summary">
+              <div class="card-img card-summary-btn">
+                <img src="images/devdesk-q.png" alt="project image">
               </div>
-              <!-- Stock Picker API Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>HTML/CSS</strong> frontend</li>
-                  <li><strong>Javascript</strong> frontend</li>
-                  <li><strong>Node/Express</strong> backend</li>
-                  <li><strong>MongoDB</strong> backend</li>
-                  <li><strong>Mocha & Chai</strong> functional testing</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-stock-price-checker.glitch.me" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/stock-price-checker" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
+              <div class="card-caption">
+                <h3 class="section-subtitle">DevDesk Q</h3>
+                <p class="portfolio-desc">A help desk ticketing app designed for Lambda School students.</p>
               </div>
-
-              <!-- Metric Imperial Converter API Summary -->
-              <div id="metric-imperial" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/metric-imperial-converter-api.png" alt="project image">
+            </div>
+            <!-- DevDesk_Q Details -->
+            <div class="card card-detail">
+              <header class="card-title">
+                <div class="tech-stack">HTML | CSS | React | Node | PostgreSQL
                 </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Metric Imperial Converter API</h3>
-                  <p class="portfolio-desc">A REST API for metric/imperial conversion.</p>
-                </div>
+                <i class="fas fa-times card-close-btn"></i>
+              </header>
+              <ul>
+                <li>Designed the application data model.</li>
+                <li>Created API microservices to manage ticket information.</li>
+                <li>Managed project plan backlog and provided senior technical leadership to the front-end development team.
+                </li>
+              </ul>
+              <div class="card-action">
+                <a href="https://devdeskqueue.com" class="live-app" target="_blank">
+                  <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                  View Online
+                </a>
+                <a href="https://github.com/devdeskqueue" class="source-code" target="_blank">
+                  <i class="fab fa-github" title="View Source"></i><br>
+                  View Source
+                </a>
               </div>
-              <!-- Metric Imperial Converter API Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>HTML/CSS</strong> frontend</li>
-                  <li><strong>Javascript</strong> frontend</li>
-                  <li><strong>Node/Express</strong> backend</li>
-                  <li><strong>Mocha & Chai</strong> unit and functional testing</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-metricimp-converter.glitch.me" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/metric-imperial-converter" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Exercise Tracker API Summary -->
-              <div id="exercise-tracker" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/exercisetracker.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Exercise Tracker API</h3>
-                  <p class="portfolio-desc">A REST API that processes exercise activity.</p>
-                </div>
-              </div>
-              <!-- Exercise Tracker API Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>HTML/CSS</strong> frontend</li>
-                  <li><strong>Javascript</strong> frontend</li>
-                  <li><strong>Node/Express</strong> backend</li>
-                  <li><strong>MongoDB</strong> backend</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-exercisetracker.glitch.me" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/exercisetracker" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Image Search API Summary -->
-              <div id="image-search" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/google-api.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Image Search API</h3>
-                  <p class="portfolio-desc">An API that processes image searches using the Google search engine</p>
-                </div>
-              </div>
-              <!-- Image Search API Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>NodeJS</strong> backend</li>
-                  <li><strong>Koa</strong> backend</li>
-                  <li><strong>PostgreSQL</strong> database</li>
-                  <li><strong>Google Custom Seach</strong> search engine api</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-image-search-api.herokuapp.com" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/image-search-api-v2" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
             </div>
           </div>
-
-          <!-- Data Science Projects -->
-          <div class="project-category" id="data-science">
-            <h3 class="section-subtitle">Data Science</h3>
-            <div class="project-list-wrapper">
-
-              <!-- Iris Data Modeling Summary -->
-              <div id="ml-iris" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/iris.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Iris Data Modeling</h3>
-                  <p class="portfolio-desc">A predictive model to identify the flower class based on available attributes.</p>
-                </div>
+      
+          <!-- Digital Journal -->
+          <div class="project-item">
+            <!-- Digital Journal Summary -->
+            <div id="digital-journal" class="card card-summary">
+              <div class="card-img card-summary-btn">
+                <img src="images/bountifulapp.png" alt="project image">
               </div>
-              <!-- Iris Data Modeling Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Python</strong></li>
-                  <li><strong>NumPy</strong></li>
-                  <li><strong>Pandas</strong></li>
-                  <li><strong>Matplotlib</strong></li>
-                  <li><strong>Seaborn</strong></li>
-                  <li><strong>scikit-learn</strong></li>
-                </ul>
-                <div class="card-action">
-                  <a href="http://nbviewer.jupyter.org/github/wmemorgan/iris-data-modeling/blob/master/reports/Iris%20Data%20Modeling%20Report.ipynb"
-                    class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="http://nbviewer.jupyter.org/github/wmemorgan/iris-data-modeling/blob/master/notebooks/Iris%20Data%20Modeling%28Deliverable%29.ipynb"
-                    class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
+              <div class="card-caption">
+                <h3 class="section-subtitle">Digital Journal</h3>
+                <p class="portfolio-desc">An app designed for non-profit professionals to record and share their activities
+                  with their team members,
+                  organizations, and donor.</p>
               </div>
-              
-              <!-- Abalone ML Modeling Summary -->
-              <div id="ml-abalone" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/abalone.png" alt="project image">
+            </div>
+            <!-- Digital Journal Details -->
+            <div class="card card-detail">
+              <header class="card-title">
+                <div class="tech-stack">HTML | CSS | React | Node | PostgreSQL
                 </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Abalone ML Modeling</h3>
-                  <p class="portfolio-desc">A machine learning model to predict the age of abalone using physical measurements data.</p>
-                </div>
+                <i class="fas fa-times card-close-btn"></i>
+              </header>
+              <ul>
+                <li>Designed the UI style guide; reduced development time by 50%.</li>
+                <li>Built landing page as application entry point.</li>
+                <li>Developed reusable UI components with React styled components.</li>
+              </ul>
+              <div class="card-action">
+                <a href="https://bountifulapp.netlify.com" class="live-app" target="_blank">
+                  <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                  View Online
+                </a>
+                <a href="https://github.com/coordinator-storytelling" class="source-code" target="_blank">
+                  <i class="fab fa-github" title="View Source"></i><br>
+                  View Source
+                </a>
               </div>
-
-              <!-- Abalone ML Modeling Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Python</strong></li>
-                  <li><strong>NumPy</strong></li>
-                  <li><strong>Pandas</strong></li>
-                  <li><strong>Matplotlib</strong></li>
-                  <li><strong>Seaborn</strong></li>
-                  <li><strong>scikit-learn</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="http://nbviewer.jupyter.org/github/wmemorgan/abalone-ml-model/blob/master/AbaloneMLModeling.ipynb" class="live-app"
-                    target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                </div>
-              </div>
-              
-              <!-- Movie Data Analysis Summary -->
-              <div id="movie-data-analysis" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/movie-data.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Movie Data Analysis</h3>
-                  <p class="portfolio-desc">Exploratory data analysis on movie data.</p>
-                </div>
-              </div>
-              <!-- Movie Data Analysis Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Python</strong></li>
-                  <li><strong>NumPy</strong></li>
-                  <li><strong>Pandas</strong></li>
-                  <li><strong>Matplotlib</strong></li>
-                  <li><strong>Seaborn</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="http://nbviewer.jupyter.org/github/wmemorgan/movie-data-analysis/blob/master/movie-data-analysis.ipynb"
-                    class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                </div>
-              </div>
-
-              <!-- Treemap Diagram Summary -->
-              <div id="treemap-diagram" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/d3-treemap.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Treemap Diagram</h3>
-                  <p class="portfolio-desc">A chart that dynamically visualizes 3 different datasets in a treemap format.</p>
-                </div>
-              </div>
-              <!-- Treemap Diagram Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Javascript</strong></li>
-                  <li><strong>D3</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="https://wilfredmorgan.com/d3-treemap/" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/d3-treemap" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-            
-              <!-- Choropleth Map Summary -->
-              <div id="choropleth" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/d3-choropleth-map.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Choropleth Map</h3>
-                  <p class="portfolio-desc">Visualize higher education in the United States.</p>
-                </div>
-              </div>
-              <!-- Choropleth Map Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Javascript</strong></li>
-                  <li><strong>D3</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="https://wilfredmorgan.com/d3-choropleth-map"
-                    class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/d3-choropleth-map" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Heat Map Summary -->
-              <div id="heatmap" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/d3-heatmap.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Heat Map</h3>
-                  <p class="portfolio-desc">Visualize monthly global land surface temperates since 1715.</p>
-                </div>
-              </div>
-              <!-- Heat Map Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Javascript</strong></li>
-                  <li><strong>D3</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="https://wilfredmorgan.com/d3-heatmap/"
-                    class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/d3-heatmap" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
- 
             </div>
           </div>
-
-          <!-- Serverless Applications -->
-          <div class="project-category" id="serverless-apps">
-            <h3 class="section-subtitle">Serverless Application Development</h3>
-            <div class="project-list-wrapper">
-
-              <!-- CMBS Site Summary -->
-              <div id="cmbs-site" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/cmbstech.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">CMBS Website</h3>
-                  <p class="portfolio-desc">A fully dynamic static website with a serverless content management system.</p>
-                </div>
-              </div>
-              <!-- CMBS Site Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>React</strong> frontend</li>
-                  <li><strong>Netlify</strong> static site hosting</li>
-                  <li><strong>AWS Lambda (NodeJS)</strong> contact form handling</li>
-                  <li><strong>Contentful</strong> serverless CMS</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://cmbstech.com" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/cmbusinesssolutions/cmbs-site" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Chat App Summary -->
-              <div id="chat-app" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/mychatapp.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Chat My App</h3>
-                  <p class="portfolio-desc">A chat application developed in React.js</p>
-                </div>
-              </div>
-              <!-- Chat App Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>React</strong> frontend</li>
-                  <li><strong>ChatKit</strong> chat API and SDK</li>
-                  <li><strong>Google Cloud Firebase</strong> cloud hosting</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-mychat-app.firebaseapp.com/" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/mychat-app" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Full Stack Projects -->
-          <div class="project-category" id="fullstack-dev">
-            <h3 class="section-subtitle">Full Stack Development</h3>
-            <div class="project-list-wrapper">
-
-              <!-- Face Detect App Summary -->
-              <div id="face-detect" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/face-detection.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Face Detection App</h3>
-                  <p class="portfolio-desc">An app that can detect a human face in a picture</p>
-                </div>
-              </div>
-              <!-- Face Detect App Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>NodeJS</strong> backend</li>
-                  <li><strong>PostgreSQL</strong> database</li>
-                  <li><strong>React</strong> frontend</li>
-                  <li><strong>Clarifai</strong> face detection api</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://smart-brainapp.herokuapp.com" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/face-detect-backend" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <!-- Frontend Development -->
-          <div class="project-category" id="frontend-dev">
-            <h3 class="section-subtitle">Frontend Development</h3>
-            <div class="project-list-wrapper">
-
-              <!-- Simon Game Summary -->
-              <div id="simon-game" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/simon-game.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Simon Game</h3>
-                  <p class="portfolio-desc"> Recreation of the classic Simon game.</p>
-                </div>
-              </div>
-              <!-- Simon Game Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <p>
-                  The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
-                </p>
-                <ul>
-                  <li><strong>Vanilla Javascript</strong> program and game logic</li>
-                  <li><strong>HTML</strong> content layout</li>
-                  <li><strong>CSS</strong> format and game effects</li>
-                </ul>
-                <div class="card-action">
-                  <a href="http://wilfredmorgan.com/simon-game" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="http://github.com/wmemorgan/simon-game" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Tic-tac-toe Summary -->
-              <div class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/tic-tac-toe.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Tic-Tac-Toe</h3>
-                  <p class="portfolio-desc">Tic-tac-toe game with 1 and 2 player modes</p>
-                </div>
-              </div>
-              <!-- Tic-tac-toe Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <p>
-                  The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
-                </p>
-                <ul>
-                  <li><strong>Vanilla Javascript</strong> program and game logic</li>
-                  <li><strong>HTML</strong> content layout</li>
-                  <li><strong>CSS</strong> format and game effects</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wilfredmorgan.com/tic-tac-toe/" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/tic-tac-toe" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- JS Calculator Summary -->
-              <div id="calculator" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/calculator.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Javascript Calculator</h3>
-                  <p class="portfolio-desc">Calculator written in vanilla javascript</p>
-                </div>
-              </div>
-              <!-- JS Calculator Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <p>
-                  The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
-                </p>
-                <ul>
-                  <li><strong>Vanilla Javascript</strong> program logic</li>
-                  <li><strong>HTML</strong> content and UI</li>
-                  <li><strong>CSS</strong> UI</li>
-                </ul>
-                <div class="card-action">
-                  <a href="http://wilfredmorgan.com/calculator_js/" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/calculator_js" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
+      
+      
         </div>
-        <div class="cta-group">
-          <p class="cta-text">
-            <span class="contact-btn">Contact me</span> to discuss your project needs.
-          </p>
-        </div>
+      </div>
+      <div class="cta-group">
+        <p class="cta-text">
+          <span class="contact-btn">Contact me</span> to discuss your project needs.
+        </p>
+      </div>
       </div>
     </section>
 
@@ -823,227 +337,6 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
-
-
-    <!-- Work Section -->
-    <section id="work">
-      <div class="container">
-        <h2 class="section-title">Work Experience</h2>
-        <!-- CM Business Solutions -->
-        <div class="role">
-          <div class="role-heading">
-            <h3 class="company">CM Business Solutions</h3>
-            <p class="role-title">Software Developer & IT Consultant</p>
-          </div>
-          <div class="role-description">
-            <div class="role-summary">
-              <p>
-                Transform legacy technology into modern flexible business-driving platforms through the following services:
-              </p>
-              <ul>
-                <li>IT and digital strategy development</li>
-                <li>Data integration and analytics systems planning and design</li>
-                <li>Microservice architecture planning and design</li>
-              </ul>
-            </div>
-            <div class="role-accomplishments">
-              <p class="accomplishments">Accomplishments</p>
-              <ul>
-                <li>
-                  Designing a data management platform that streamlines the collection, transformation, and analysis of POS and inventory
-                  data from multiple vendor systems.
-                </li>
-                <li>
-                  Developing and selling product and service offerings for data engineering and DevOps solutions.
-                </li>
-                <li>
-                  Developed API microservice demos for online education program.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="work-dates">
-            <p>JAN 2017 - PRESENT</p>
-          </div>
-        </div>
-
-        <!-- CM Business Solutions -->
-        <div class="role">
-          <div class="role-heading">
-            <h3 class="company">CM Business Solutions</h3>
-            <p class="role-title">IT Consultant</p>
-          </div>
-          <div class="role-description">
-            <div class="role-summary">
-              <p>
-                Empower companies to leverage technology and data to cultivate high performance and drive business growth by providing the
-                following services:
-              </p>
-              <ul>
-                <li>IT services planning and management</li>
-                <li>IT infrastructure architecture planning and design</li>
-                <li>Project management</li>
-              </ul>
-            </div>
-            <div class="role-accomplishments">
-              <p class="accomplishments">Accomplishments</p>
-              <ul>
-                <li>
-                    Developed technology strategy and operational roadmaps for clients in a variety of industries including the healthcare,
-                  retail, government, and technology startup sectors.
-                </li>
-                <li>
-                    Developed digital marketing and communication strategy roadmap for fast-growing small/mid-sized enterprises.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="work-dates">
-            <p>JUL 2009 - DEC 2016</p>
-          </div>
-        </div>
-
-         <!-- Tek Age Solutions -->
-        <div class="role">
-          <div class="role-heading">
-            <h3 class="company">Tek Age Solutions</h3>
-            <p class="role-title">VP Business Development | CIO Consultant</p>
-          </div>
-          <div class="role-description">
-            <div class="role-summary">
-              <p>
-                Created the Business Development division to research and cultivate new business and strategic partnerships for the company, 
-                in line with providing CIO and infrastructure architecture consultation services for existing clients.
-              </p>
-            </div>
-            <div class="role-accomplishments">
-              <p class="accomplishments">Accomplishments</p>
-              <ul>
-                <li>
-                   Established distribution partnership with IRI, a data management software company in Florida, USA.
-                </li>
-                <li>
-                  Established strategic alliance with Amagi, a software development company in Manila, Philippines.
-                </li>
-                <li>
-                   Established Technology Roadmap and Digital Marketing Roadmap design services for clientele.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="work-dates">
-            <p>JUN 2014 - PRESENT</p>
-          </div>
-        </div> 
-        
-        <!-- BridgeSEA -->
-        <div class="role">
-          <div class="role-heading">
-            <h3 class="company">Bridge Southeast Asia</h3>
-            <p class="role-title">Chief Information Officer</p>
-          </div>
-          <div class="role-description">
-            <div class="role-summary">
-              <p>
-                 Led the team that provides IT services for fast-growing small/mid-sized enterprises. Developed and implemented the culture,
-                strategy, and operational framework for the next generation IT company.
-              </p>
-            </div>
-            <div class="role-accomplishments">
-              <p class="accomplishments">Accomplishments</p>
-              <ul>
-                <li>
-                   Streamlined and enhanced the customer support experience by implementing a centralized help desk platform
-                </li>
-                <li>
-                   Improved software development and delivery initiatives by implementing project management best-practice standards and processes
-                </li>
-                <li>
-                    Promoted a customer-centric team culture of task prioritization and accountability using a clear, organized, and objective
-                    methodology of goal setting and performance management.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="work-dates">
-            <p>MAR 2016 - MAR 2017</p>
-          </div>
-        </div>  
-
-        <!-- FDIC FCU -->
-        <div class="role">
-          <div class="role-heading">
-            <h3 class="company">FDIC Federal Credit Union</h3>
-            <p class="role-title">Chief Technology Officer</p>
-          </div>
-          <div class="role-description">
-            <div class="role-summary">
-              <p>
-                 Architected and deployed technology solutions (hardware, software, staffing solutions, methods, and training) to achieve
-                company objectives.
-              </p>
-            </div>
-            <div class="role-accomplishments">
-              <p class="accomplishments">Accomplishments</p>
-              <ul>
-                <li>
-                   Designed and implemented a custom enterprise business intelligence platform
-                </li>
-                <li>
-                   Successfully consolidated servers to virtual environments reducing data center overhead by 70%.
-                </li>
-                <li>
-                   Developed IT business continuity strategy and infrastructure which increased recovery point objectives (RPO) by 70% and
-                  decreased recovery time objectives (RTO) by 75%.
-                </li>
-                <li>
-                  Conducted enterprise product development consultation, as well as accounting and back-office systems migration and support.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="work-dates">
-            <p>NOV 2000 - JUL 2009</p>
-          </div>
-        </div>    
-
-        <!-- Pepco FCU -->
-        <div class="role">
-          <div class="role-heading">
-            <h3 class="company">Pepco Federal Credit Union</h3>
-            <p class="role-title">IT Operations Manager</p>
-          </div>
-          <div class="role-description">
-            <div class="role-summary">
-              <p>
-                Managed the organization’s data processing department and electronic service delivery channels (ATM, online and phone banking).
-                Maintained corporate IT systems including networks (LAN/WAN), staff workstations, and website.
-              </p>
-            </div>
-            <div class="role-accomplishments">
-              <p class="accomplishments">Accomplishments</p>
-              <ul>
-                <li>
-                  Redesigned website to align with the organization’s vision and goals and market products and services in a more targeted
-                  and customer-friendly manner.
-                </li>
-                <li>
-                  Established and nurtured cooperation with third party technology vendors and coordinated multiple technology projects.
-                </li>
-                <li>
-                  Dramatically eased service delivery procedures for operational support and increased the quality of provided service by
-                  automating repetitive tasks, streamlining key tasks, and creating clear and concise documentations and manuals.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="work-dates">
-            <p>JUL 1999 - NOV 2000</p>
-          </div>
-        </div>          
-        
       </div>
     </section>
   </div> 
