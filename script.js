@@ -365,12 +365,10 @@ const filterCategories = (i) => {
     }
   }
 }
-noFilters.addEventListener('click', showAllCategories)
 
 for (let i = 0; i < filters.length; i++) {
   filters[i].addEventListener('click',filterCategories(i))
 }
-
 
 /*-----Project card behavior functions-----*/
 const openCardDetail = (i) => {
