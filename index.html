@@ -180,579 +180,95 @@
         <p>
           This portfolio showcases various projects and proofs of concepts to showcase my technical skills.
         </p>
-        <p class="category-menu-instructions">Filter projects by the following categories:</p>
       </div>
-      <ul class="category-menu">
-        <li class="category-menu-item show" id="remove-filters">All</li>
-        <li class="category-menu-item filters">API and Microservices</li>
-        <li class="category-menu-item filters">Data Science</li>
-        <li class="category-menu-item filters">Serverless</li>
-        <li class="category-menu-item filters">Fullstack</li>
-        <li class="category-menu-item filters">Frontend</li>
-      </ul>
-        <div class="project-items">
-          <div class="project-category" id="api-dev">
-            <h3 class="section-subtitle">APIs and Microservices</h3>
-            <div class="project-list-wrapper">
-
-              <!-- Stock Picker API Summary -->
-              <div id="stock-picker" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/stock-price-api.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Stock Picker API</h3>
-                  <p class="portfolio-desc">A REST API for checking the latest stock prices of publicly traded companies.</p>
-                </div>
+      <!-- Full Stack Projects -->
+      <div class="project-category" id="fullstack-dev">
+        <div class="project-list-wrapper">
+          <!-- DevDesk_Q -->
+          <div class="project-item">
+            <!-- DevDesk_Q Summary -->
+            <div id="devdesk_q" class="card card-summary">
+              <div class="card-img card-summary-btn">
+                <img src="images/devdesk-q.png" alt="project image">
               </div>
-              <!-- Stock Picker API Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>HTML/CSS</strong> frontend</li>
-                  <li><strong>Javascript</strong> frontend</li>
-                  <li><strong>Node/Express</strong> backend</li>
-                  <li><strong>MongoDB</strong> backend</li>
-                  <li><strong>Mocha & Chai</strong> functional testing</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-stock-price-checker.glitch.me" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/stock-price-checker" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
+              <div class="card-caption">
+                <h3 class="section-subtitle">DevDesk Q</h3>
+                <p class="portfolio-desc">A help desk ticketing app designed for Lambda School students.</p>
               </div>
-
-              <!-- Metric Imperial Converter API Summary -->
-              <div id="metric-imperial" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/metric-imperial-converter-api.png" alt="project image">
+            </div>
+            <!-- DevDesk_Q Details -->
+            <div class="card card-detail">
+              <header class="card-title">
+                <div class="tech-stack">HTML | CSS | React | Node | PostgreSQL
                 </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Metric Imperial Converter API</h3>
-                  <p class="portfolio-desc">A REST API for metric/imperial conversion.</p>
-                </div>
+                <i class="fas fa-times card-close-btn"></i>
+              </header>
+              <ul>
+                <li>Designed the application data model.</li>
+                <li>Created API microservices to manage ticket information.</li>
+                <li>Managed project plan backlog and provided senior technical leadership to the front-end development team.
+                </li>
+              </ul>
+              <div class="card-action">
+                <a href="https://devdeskqueue.com" class="live-app" target="_blank">
+                  <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                  View Online
+                </a>
+                <a href="https://github.com/devdeskqueue" class="source-code" target="_blank">
+                  <i class="fab fa-github" title="View Source"></i><br>
+                  View Source
+                </a>
               </div>
-              <!-- Metric Imperial Converter API Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>HTML/CSS</strong> frontend</li>
-                  <li><strong>Javascript</strong> frontend</li>
-                  <li><strong>Node/Express</strong> backend</li>
-                  <li><strong>Mocha & Chai</strong> unit and functional testing</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-metricimp-converter.glitch.me" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/metric-imperial-converter" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Exercise Tracker API Summary -->
-              <div id="exercise-tracker" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/exercisetracker.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Exercise Tracker API</h3>
-                  <p class="portfolio-desc">A REST API that processes exercise activity.</p>
-                </div>
-              </div>
-              <!-- Exercise Tracker API Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>HTML/CSS</strong> frontend</li>
-                  <li><strong>Javascript</strong> frontend</li>
-                  <li><strong>Node/Express</strong> backend</li>
-                  <li><strong>MongoDB</strong> backend</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-exercisetracker.glitch.me" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/exercisetracker" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Image Search API Summary -->
-              <div id="image-search" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/google-api.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Image Search API</h3>
-                  <p class="portfolio-desc">An API that processes image searches using the Google search engine</p>
-                </div>
-              </div>
-              <!-- Image Search API Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>NodeJS</strong> backend</li>
-                  <li><strong>Koa</strong> backend</li>
-                  <li><strong>PostgreSQL</strong> database</li>
-                  <li><strong>Google Custom Seach</strong> search engine api</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-image-search-api.herokuapp.com" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/image-search-api-v2" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
             </div>
           </div>
-
-          <!-- Data Science Projects -->
-          <div class="project-category" id="data-science">
-            <h3 class="section-subtitle">Data Science</h3>
-            <div class="project-list-wrapper">
-
-              <!-- Iris Data Modeling Summary -->
-              <div id="ml-iris" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/iris.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Iris Data Modeling</h3>
-                  <p class="portfolio-desc">A predictive model to identify the flower class based on available attributes.</p>
-                </div>
+      
+          <!-- Digital Journal -->
+          <div class="project-item">
+            <!-- Digital Journal Summary -->
+            <div id="digital-journal" class="card card-summary">
+              <div class="card-img card-summary-btn">
+                <img src="images/bountifulapp.png" alt="project image">
               </div>
-              <!-- Iris Data Modeling Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Python</strong></li>
-                  <li><strong>NumPy</strong></li>
-                  <li><strong>Pandas</strong></li>
-                  <li><strong>Matplotlib</strong></li>
-                  <li><strong>Seaborn</strong></li>
-                  <li><strong>scikit-learn</strong></li>
-                </ul>
-                <div class="card-action">
-                  <a href="http://nbviewer.jupyter.org/github/wmemorgan/iris-data-modeling/blob/master/reports/Iris%20Data%20Modeling%20Report.ipynb"
-                    class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="http://nbviewer.jupyter.org/github/wmemorgan/iris-data-modeling/blob/master/notebooks/Iris%20Data%20Modeling%28Deliverable%29.ipynb"
-                    class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
+              <div class="card-caption">
+                <h3 class="section-subtitle">Digital Journal</h3>
+                <p class="portfolio-desc">An app designed for non-profit professionals to record and share their activities
+                  with their team members,
+                  organizations, and donor.</p>
               </div>
-              
-              <!-- Abalone ML Modeling Summary -->
-              <div id="ml-abalone" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/abalone.png" alt="project image">
+            </div>
+            <!-- Digital Journal Details -->
+            <div class="card card-detail">
+              <header class="card-title">
+                <div class="tech-stack">HTML | CSS | React | Node | PostgreSQL
                 </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Abalone ML Modeling</h3>
-                  <p class="portfolio-desc">A machine learning model to predict the age of abalone using physical measurements data.</p>
-                </div>
+                <i class="fas fa-times card-close-btn"></i>
+              </header>
+              <ul>
+                <li>Designed the UI style guide; reduced development time by 50%.</li>
+                <li>Built landing page as application entry point.</li>
+                <li>Developed reusable UI components with React styled components.</li>
+              </ul>
+              <div class="card-action">
+                <a href="https://bountifulapp.netlify.com" class="live-app" target="_blank">
+                  <i class="fas fa-external-link-alt" title="View Online"></i><br>
+                  View Online
+                </a>
+                <a href="https://github.com/coordinator-storytelling" class="source-code" target="_blank">
+                  <i class="fab fa-github" title="View Source"></i><br>
+                  View Source
+                </a>
               </div>
-
-              <!-- Abalone ML Modeling Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Python</strong></li>
-                  <li><strong>NumPy</strong></li>
-                  <li><strong>Pandas</strong></li>
-                  <li><strong>Matplotlib</strong></li>
-                  <li><strong>Seaborn</strong></li>
-                  <li><strong>scikit-learn</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="http://nbviewer.jupyter.org/github/wmemorgan/abalone-ml-model/blob/master/AbaloneMLModeling.ipynb" class="live-app"
-                    target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                </div>
-              </div>
-              
-              <!-- Movie Data Analysis Summary -->
-              <div id="movie-data-analysis" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/movie-data.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Movie Data Analysis</h3>
-                  <p class="portfolio-desc">Exploratory data analysis on movie data.</p>
-                </div>
-              </div>
-              <!-- Movie Data Analysis Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Python</strong></li>
-                  <li><strong>NumPy</strong></li>
-                  <li><strong>Pandas</strong></li>
-                  <li><strong>Matplotlib</strong></li>
-                  <li><strong>Seaborn</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="http://nbviewer.jupyter.org/github/wmemorgan/movie-data-analysis/blob/master/movie-data-analysis.ipynb"
-                    class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                </div>
-              </div>
-
-              <!-- Treemap Diagram Summary -->
-              <div id="treemap-diagram" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/d3-treemap.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Treemap Diagram</h3>
-                  <p class="portfolio-desc">A chart that dynamically visualizes 3 different datasets in a treemap format.</p>
-                </div>
-              </div>
-              <!-- Treemap Diagram Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Javascript</strong></li>
-                  <li><strong>D3</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="https://wilfredmorgan.com/d3-treemap/" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/d3-treemap" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-            
-              <!-- Choropleth Map Summary -->
-              <div id="choropleth" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/d3-choropleth-map.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Choropleth Map</h3>
-                  <p class="portfolio-desc">Visualize higher education in the United States.</p>
-                </div>
-              </div>
-              <!-- Choropleth Map Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Javascript</strong></li>
-                  <li><strong>D3</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="https://wilfredmorgan.com/d3-choropleth-map"
-                    class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/d3-choropleth-map" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Heat Map Summary -->
-              <div id="heatmap" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/d3-heatmap.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Heat Map</h3>
-                  <p class="portfolio-desc">Visualize monthly global land surface temperates since 1715.</p>
-                </div>
-              </div>
-              <!-- Heat Map Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>Javascript</strong></li>
-                  <li><strong>D3</strong></li>
-                </ul>
-                <div class="card-project">
-                  <a href="https://wilfredmorgan.com/d3-heatmap/"
-                    class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/d3-heatmap" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
- 
             </div>
           </div>
-
-          <!-- Serverless Applications -->
-          <div class="project-category" id="serverless-apps">
-            <h3 class="section-subtitle">Serverless Application Development</h3>
-            <div class="project-list-wrapper">
-
-              <!-- CMBS Site Summary -->
-              <div id="cmbs-site" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/cmbstech.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">CMBS Website</h3>
-                  <p class="portfolio-desc">A fully dynamic static website with a serverless content management system.</p>
-                </div>
-              </div>
-              <!-- CMBS Site Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>React</strong> frontend</li>
-                  <li><strong>Netlify</strong> static site hosting</li>
-                  <li><strong>AWS Lambda (NodeJS)</strong> contact form handling</li>
-                  <li><strong>Contentful</strong> serverless CMS</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://cmbstech.com" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/cmbusinesssolutions/cmbs-site" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Chat App Summary -->
-              <div id="chat-app" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/mychatapp.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Chat My App</h3>
-                  <p class="portfolio-desc">A chat application developed in React.js</p>
-                </div>
-              </div>
-              <!-- Chat App Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>React</strong> frontend</li>
-                  <li><strong>ChatKit</strong> chat API and SDK</li>
-                  <li><strong>Google Cloud Firebase</strong> cloud hosting</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wme-mychat-app.firebaseapp.com/" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/mychat-app" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Full Stack Projects -->
-          <div class="project-category" id="fullstack-dev">
-            <h3 class="section-subtitle">Full Stack Development</h3>
-            <div class="project-list-wrapper">
-
-              <!-- Face Detect App Summary -->
-              <div id="face-detect" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/face-detection.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Face Detection App</h3>
-                  <p class="portfolio-desc">An app that can detect a human face in a picture</p>
-                </div>
-              </div>
-              <!-- Face Detect App Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <ul>
-                  <li><strong>NodeJS</strong> backend</li>
-                  <li><strong>PostgreSQL</strong> database</li>
-                  <li><strong>React</strong> frontend</li>
-                  <li><strong>Clarifai</strong> face detection api</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://smart-brainapp.herokuapp.com" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/face-detect-backend" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <!-- Frontend Development -->
-          <div class="project-category" id="frontend-dev">
-            <h3 class="section-subtitle">Frontend Development</h3>
-            <div class="project-list-wrapper">
-
-              <!-- Simon Game Summary -->
-              <div id="simon-game" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/simon-game.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Simon Game</h3>
-                  <p class="portfolio-desc"> Recreation of the classic Simon game.</p>
-                </div>
-              </div>
-              <!-- Simon Game Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <p>
-                  The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
-                </p>
-                <ul>
-                  <li><strong>Vanilla Javascript</strong> program and game logic</li>
-                  <li><strong>HTML</strong> content layout</li>
-                  <li><strong>CSS</strong> format and game effects</li>
-                </ul>
-                <div class="card-action">
-                  <a href="http://wilfredmorgan.com/simon-game" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="http://github.com/wmemorgan/simon-game" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- Tic-tac-toe Summary -->
-              <div class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/tic-tac-toe.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Tic-Tac-Toe</h3>
-                  <p class="portfolio-desc">Tic-tac-toe game with 1 and 2 player modes</p>
-                </div>
-              </div>
-              <!-- Tic-tac-toe Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <p>
-                  The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
-                </p>
-                <ul>
-                  <li><strong>Vanilla Javascript</strong> program and game logic</li>
-                  <li><strong>HTML</strong> content layout</li>
-                  <li><strong>CSS</strong> format and game effects</li>
-                </ul>
-                <div class="card-action">
-                  <a href="https://wilfredmorgan.com/tic-tac-toe/" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/tic-tac-toe" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-              <!-- JS Calculator Summary -->
-              <div id="calculator" class="card project-item card-summary">
-                <div class="card-img card-summary-btn">
-                  <img src="images/calculator.png" alt="project image">
-                </div>
-                <div class="card-caption">
-                  <h3 class="section-subtitle">Javascript Calculator</h3>
-                  <p class="portfolio-desc">Calculator written in vanilla javascript</p>
-                </div>
-              </div>
-              <!-- JS Calculator Details -->
-              <div class="card project-item card-detail">
-                <span class="card-title">Development <i class="fas fa-times card-close-btn"></i>
-                </span>
-                <p>
-                  The project showcases front-end development using HTML, CSS3, and Javascript (ES6) technology
-                </p>
-                <ul>
-                  <li><strong>Vanilla Javascript</strong> program logic</li>
-                  <li><strong>HTML</strong> content and UI</li>
-                  <li><strong>CSS</strong> UI</li>
-                </ul>
-                <div class="card-action">
-                  <a href="http://wilfredmorgan.com/calculator_js/" class="live-app" target="_blank">
-                    <i class="fas fa-external-link-alt" title="View Online"></i><br>
-                    View Online
-                  </a>
-                  <a href="https://github.com/wmemorgan/calculator_js" class="source-code" target="_blank">
-                    <i class="fab fa-github" title="View Source"></i><br>
-                    View Source
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
+      
+      
         </div>
-        <div class="cta-group">
-          <p class="cta-text">
-            <span class="contact-btn">Contact me</span> to discuss your project needs.
-          </p>
-        </div>
+      </div>
+      <div class="cta-group">
+        <p class="cta-text">
+          <span class="contact-btn">Contact me</span> to discuss your project needs.
+        </p>
+      </div>
       </div>
     </section>
 
