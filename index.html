@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 </head>
 <body>
   <!-- Navigation Menu -->
@@ -404,13 +405,19 @@
       </div>
     </div>   
     <div id="copyright-info">
-      <p>©2019 Wilfred Morgan</p>
+      <p>©<span id="copyright-year"></span> Wilfred Morgan</p>
     </div>
   </footer>
   <!-- Google reCaptcha API -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <!-- Firebase API script -->
   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+  <!-- Copyright Year script -->
+  <script>
+    const currentYear = moment();
+    const copyRightYear = document.getElementById('copyright-year');
+    copyRightYear.innerHTML = currentYear.format('YYYY');
+  </script>
   <!-- Custom script -->
   <script src="script.js"></script>
 </body>
