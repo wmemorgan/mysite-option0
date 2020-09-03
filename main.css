@@ -155,6 +155,7 @@ li {
 }
 
 .emphasize-text {
+	margin: .85rem 0;
 	color: var(--emphasis-text-color);
 	font-weight: bold;
 }
@@ -626,6 +627,47 @@ section .cta-group {
 .about-img img {
 	width: 100%;
 	object-fit: contain;
+}
+
+.about-hire-me-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.about-hire-me-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-about {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	margin: 0.5rem;
+	padding: 1rem 0.75rem;
+	background: var(--primary-bg-color);
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.card-about h4 {
+	font-size: 0.85rem;
+}
+
+.card-about-img-container {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.card-about-img {
+	width: 100px;
+	height: 100px;
 }
 
 /*-----services-----*/
@@ -1183,6 +1225,12 @@ footer #copyright-info {
 
 	.about-img img {
 		border-radius: 50%;
+	}
+
+	.about-hire-me-box {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	/*----services----*/
