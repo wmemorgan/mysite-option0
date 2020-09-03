@@ -697,11 +697,11 @@ section .cta-group {
 }
 
 /*-----projects-----*/
-#projects {
+.projects-container {
 	display: flex;
 	flex-direction: column;
-	/* text-align: center; */
-	/* justify-items: center; */
+	justify-content: center;
+	align-items: center;
 }
 
 .category-menu-instructions {
