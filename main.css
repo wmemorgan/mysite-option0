@@ -854,7 +854,7 @@ section .cta-group {
 
 .list-wrapper {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 1rem;
 	grid-column-gap: 0;
 	align-items: center;
