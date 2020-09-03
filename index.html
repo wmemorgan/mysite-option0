@@ -12,12 +12,11 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 </head>
 <body>
   <!-- Navigation Menu -->
   <nav class="navbar">
-    <div id="logo" class="brand"><a href="/">Wilfred Morgan</a></div>
+    <div class="brand logo"><a href="/"><img src="./images/logo.png"></a></div>
     <ul class="navbar-nav">
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -31,8 +30,8 @@
   <div id="side-menu" class="side-nav">
     <!-- <a href="" id="close-slide">&times;</a> -->
     <div class="form-header">
-      <p class="brand">
-        <a href="/">Wilfred Morgan</a>
+      <p class="brand logo">
+        <a href="/"><img src="./images/logo.png"></a>
       </p>
       <i id="close-slide" class="far fa-times-circle"></i>
     </div>
@@ -87,13 +86,12 @@
       <h1 id="headline">Wilfred Morgan</h1>
       <h4 id="subtitle">Software Developer | IT Consultant</h4>
     </header>
-    <div id="tagline">
-      <p>
-         I am a software developer and IT consultant with a passion for transforming legacy technology into modern and innovative
-        digital platforms.
-      </p>
-      <br>
+    <div class="tagline-container">
+      <div id="tagline">
+          I build great technology with <span id="typewriter-languages"></span>
+      </div>
     </div>
+
     <div class="cta-group">
       <button class="cta-btn contact-btn">contact me</button>
       <div class="social-media-group">
@@ -412,7 +410,27 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <!-- Firebase API script -->
   <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+  <!-- Typewriter Script -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script>
+    const languages = new Typewriter('#typewriter-languages', {
+        loop: true
+      });
+
+    languages.typeString("Javascript.")
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString('Python.')
+        .pauseFor(1200)
+        .deleteAll()
+        .typeString('Java.')
+        .pauseFor(1200)
+        .deleteAll()
+        .start();
+
+  </script>
   <!-- Copyright Year script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
   <script>
     const currentYear = moment();
     const copyRightYear = document.getElementById('copyright-year');
