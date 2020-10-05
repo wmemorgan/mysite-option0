@@ -166,8 +166,16 @@ li {
 
 span.contact-btn {
 	color: var(--text-primary-color);
-	background-color: var(--default-primary-color);
-	padding: 0.15rem 0.25rem;
+	background: var(--default-primary-color);
+	padding: 0.45rem;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+
+span.contact-btn:hover {
+	border: 1px solid var(--default-primary-color);
+	color: var(--default-primary-color);
+	background: var(--text-primary-color);
 }
 
 .hide {
@@ -611,6 +619,7 @@ h3.section-subtitle {
 }
 
 section .cta-group {
+	margin-top: 1rem;
 	padding-bottom: 1rem;
 }
 
@@ -637,6 +646,13 @@ section .cta-group {
 	justify-content: center;
 	align-items: center;
 	
+}
+
+.about-why-dev-points {
+	color: var(--emphasis-text-color);
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.03rem;
 }
 
 .about-hire-me-box {
