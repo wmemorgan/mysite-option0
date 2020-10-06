@@ -800,7 +800,7 @@ section .cta-group {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	padding: 15px;
+	padding: 2rem 0 1rem 0;
 	border-bottom: 1px solid var(--primary-border-color);
 	font-size: 1.5rem;
 }
@@ -842,7 +842,19 @@ section .cta-group {
 .card-detail {
 	margin: 0 auto;
 	display: none;
-	padding: 0;
+	padding: 0 2rem;
+}
+
+.card-detail ul {
+	margin-top: 0;
+}
+
+.card-detail li {
+	margin: 0.5rem;
+}
+
+.card-detail h4 {
+	margin: 1.5rem 0 0.5rem 0;
 }
 
 .card-action {
@@ -855,6 +867,10 @@ section .cta-group {
 .card-action i {
 	color: black;
 	font-size: 26px;
+}
+
+.card-action-header {
+	
 }
 
 /*-----skills-----*/
